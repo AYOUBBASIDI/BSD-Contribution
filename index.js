@@ -6,7 +6,7 @@ const FILE_PATH = './data.json';
 
 const makeCommit = n => {
     if(n===0) return simpleGit().push();
-    const DATE = moment().subtract(1,'y').add(7,'w').add(8,'d').format();
+    const DATE = moment().subtract(1,'y').add(1,'w').format();
     const data = {
         date: DATE
     }
